@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/medico.css">
+  <link rel="sortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript" src="js/pontj.js"></script>
+    <script type="text/javascript" src="js/pontj2.js"></script>
+  <script type="text/javascript">
+    $(function() {
+  $('#creatn').maskMoney({ decimal: '.', thousands: '', precision: 2 });
+  $('#altendos').maskMoney({ decimal: '.', thousands: '', precision: 2 });
+  $('#alt2').maskMoney({ decimal: '.', thousands: '', precision: 2 });
+   $('#caixab, #caixac').maskMoney({ decimal: '', thousands: '', precision: 2 });
+})
+
+      function imcendos()
+      {
+         var altura = document.getElementById("altendos").value;
+         var peso = document.getElementById("peendos").value;
+         var controle = peso/(altura*altura);
+         if (controle > 40)
+         {
+          document.getElementById('resulltendos').innerHTML ="*IMC ALTO Somente com anestesia*<br> Resultado IMC " + parseFloat(controle.toFixed(2));
+         }
+             else
+               if (controle < 20)
+         {
+          document.getElementById('resulltendos').innerHTML ="*IMC BAIXO Somente com anestesia*<br> Resultado IMC " + parseFloat(controle.toFixed(2));
+         }
+         else
+         {
+
+          document.getElementById('resulltendos').innerHTML ="*IMC NORMAL Agendar normalmente*<br> Resultado IMC " + parseFloat(controle.toFixed(2));
+         }
+
+      }
+   function imc()
+      {
+         var altura = document.getElementById("alt2").value;
+         var peso = document.getElementById("pe2").value;
+         var controle = peso/(altura*altura);
+
+             if (controle > 29) {
+                 document.getElementById('resullt').innerHTML = "Realizar medição de caixa toracica <br>IMC Resultado = "+parseFloat((controle).toFixed(2));
+             }
+             else{
+                 document.getElementById('resullt').innerHTML = " Agendar normalmente<br>IMC Resultado = "+parseFloat((controle).toFixed(2));
+             }
+
+      }
+      function enviar(){
+        var valor = document.getElementById("caixac").value;
+        var valor2= document.getElementById("caixab").value;
+            valor=valor/3.14;
+            valor2=valor2/3.14;
+
+            if ((valor<=55) && (valor2<=55)) 
+            {
+              
+           document.getElementById('caixars').innerHTML = "Pode realizar <br> caixa toracica = " + parseFloat(valor.toFixed(2)) + "<br>Caixa abdomen = " + parseFloat(valor2.toFixed(2));
+
+            }
+            else{
+                document.getElementById('caixars').innerHTML = "Não pode realizar <br> caixa toracica = " + parseFloat(valor.toFixed(2)) + "<br>Caixa abdomen = " + parseFloat(valor2.toFixed(2));
+            }
+
+    }
+
+    function checarcr()
+{
+ var botoes = document.getElementsByName("Sexo");
+ var peso = document.getElementById("pesokg").value;
+ var idade = document.getElementById("idadeano").value;
+ var creat = document.getElementById("creatn").value;
+ var controle=0.5;
+
+
+
+ 
+    if (botoes[0].checked)
+     {
+      controle=140-idade;
+      controle=controle*peso;
+      creat=creat*72;
+      controle=controle/creat;
+
+           
+            if (controle<60)
+            {
+
+                document.getElementById('creatin').innerHTML ="Confirmar com DR.Moscateli<br>Clearense de Creatina= " + parseFloat(controle.toFixed(2))+" ML/Min";
+            }
+            if (controle>60)
+            {
+               document.getElementById('creatin').innerHTML ="<br>  Agendar normalmente<br>Clearense de Creatina = "+parseFloat(controle.toFixed(2))+" ML/Min"; 
+            }
+
+
+
+    }
+    else 
+      if (botoes[1].checked)
+     {
+       controle=140-idade;
+      controle=controle*peso;
+      creat=creat*72;
+      controle=controle/creat;
+      controle=controle*0.85;
+             if (controle<60)
+            {
+               document.getElementById('creatin').innerHTML ="*Cratinina muito baixa* <br>Confirmar com DR.Moscateli<br>Clearense de Creatina= " + parseFloat(controle.toFixed(2))+" ML/Min";
+            }
+            if (controle>60)
+            {
+               document.getElementById('creatin').innerHTML ="<br>  Agendar normalmente<br>Clearense de Creatina = "+parseFloat(controle.toFixed(2))+" ML/Min"; 
+            }
+    }
+    else {
+      alert("Sexo não preenchido");
+
+    }
+}
+
+</script>
+
+
+	<title>CALCULOS</title>
+
+
+</head>
+<body>
+      <div class="header">
+    </div>
+<div class="navbar">
+  <a href="../index.html">Incio</a>
+  <a href="medicos.html">Medicos</a>
+  <a href= "convenios.html">Convenios</a> 
+  <a href="exames.html">Exames</a> 
+  <a href="ramais.html">Ramais</a>
+  <a href="resso.html">RM -  TC</a>
+  <a href="link.html">LINKS</a>
+  <a class="active" href="calculo.html">Calculos</a>
+  <a href="">Treinamento</a>
+</div>
+<div class="main">
+
+<h2 style="text-align:center">IMC ENDOSCOPIA</h2>
+      <font size="5"> Altura <br></font>
+     <input  size="3" id="altendos" name="altendos" value="" type="int" onchange="this.value = this.value.replace(/,/g, '.')"><br>
+       <font size="5"> Peso<br></font>
+     <input  size="3" id="peendos" name="peendos" value="" type="int"><br><br>
+    <button class="btnblue" onclick="imcendos()">Calcular</button><br><br>
+    <font size="5"><span id="resulltendos"></span></font>
+
+
+<center><h1 id="obeso">Ressonancia Magnética para pacientes com 100 kg ou mais</h1></center>
+<p>Anotar o peso e a altura do paciente;</p>
+<p>Acessar o site: <a href="https://www.programasaudefacil.com.br/calculadora-de-imc" target="_blank">CALCULO IMC</a>
+  <br> Ou utilizar metodo abaixo.<br>
+  <h2 id="imcr" style="text-align:center;">IMC RESSONANCIA</h2>
+
+      <font size="5"> Altura <br></font>
+     <input  size="3" id="alt2" name="alt2" value="" type="int" onchange="this.value = this.value.replace(/,/g, '.')"><br>
+       <font size="5"> Peso<br></font>
+     <input size="3" id="pe2" name="pe2" value="" type="int"><br>
+     <br>
+    <button  class="btnblue" onclick="imc()">Calcular</button><br>
+    <font size="5"><span id="resullt"></span></font>
+<br>
+<br>
+
+Inserir o peso e a altura do paciente e clicar em
+“calcular”.</p>
+<p>Anotar o IMC (Índice de massa corpórea) e seguir a
+orientação abaixo:</p><br>
+ <p>Até 29 = agendar normalmente.</p><br>
+ <p>Acima de 29 = O paciente deve medir em casa, com
+fita métrica, a circunferência do abdômen e do
+tórax incluindo os braços. </p>
+<img height="200px" src="img/pacobs.png">
+<br>
+  <font size="5">Valor da circuferencia do abdomen //Sem ponto "."</font><br>
+   <input size="3" id="caixab" name="caixab" value="" type="int" ><br>
+   <font size="5">Valor circuferencia do Torax //Sem ponto "."</font><br>
+   <input size="3" id="caixac" name="caixac" value="" type="int"><br><br>
+   <button class="btnblue" onclick="enviar()">Calcular</button> <br><br>
+   <font size="5"><span id="caixars"></span></font>
+
+
+<h1 id="Clearense"><center>Clearense de Creatina</center></h1>
+ 
+ <form><font size="5">Sexo:</font> </form>
+   <br> 
+
+   <input type="radio" name="Sexo" value="1"> <font size="5">Masculino</font><br>
+      <input type="radio" name="Sexo" value="2"><font size="5"> Feminino</font></form>
+<br>
+   <font size="5">Peso do paciente</font><br>
+   <input size="3" id="pesokg" name="pesokg" value="" type="int"><br>
+      <font size="5">Idade do paciente</font><br>
+   <input size="3" id="idadeano" name="idadeano" value="" type="int"><br>
+      <font size="5">CREATININA</font><br>
+   <input size="5" id="creatn" name="creatn" value="" type="int" onchange="this.value = this.value.replace(/,/g, '.')"><br><br>
+   <button class="btnblue" onclick="checarcr()">Calcular</button>
+   <p><font size="5"><span id="creatin"></span></p> </font>
+
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+$(function() {
+  $('#creatn').maskMoney({ decimal: '.', thousands: '', precision: 2 });
+})
+document.getElementById("defaultOpen").click();
+</script>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/medico.css">
+  <link rel="sortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+
+	<title>Medicos</title>
+  <style type="text/css">
+  
+    .container {
+  overflow: hidden;
+}
+
+.filterDiv {
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btnf {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btnf:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btnf.activem {  
+  background-color: #666;
+  color: white;
+
+}
+
+  </style>
+
+</head>
+
+
+
+<body>
+    <div class="header">
+    </div>
+<div class="navbar">
+  <a href="../index.html">Incio</a>
+  <a class= "active" href="medicos.html">Medicos</a>
+  <a href="convenios.html">Convenios</a> 
+  <a href="exames.html">Exames</a> 
+  <a href="ramais.html">Ramais</a>
+  <a href="resso.html">RM -  TC</a>
+  <a href="link.html">LINKS</a>
+  <a href="calculo.html">Calculos</a>
+  <a href="">Treinamento</a>
+</div>
+<div class="main">
+
+  <h1 style="color: white; background-color: red; text-align:center">Medicos</h1>
+  <h2 style="color: blue;text-align: center;">Medicos que realizam sem pedido medico</h2>
+  <h3 style="text-align: center;">Ler o livro de cada medico com atenção e se atentar a exceções de cada item.</h3>
+  <cite>Em caso de duvidas consultar a gerencia.</cite>
+  <div id="myBtnfContainer">
+  <button class="btnf activem" onclick="filterSelection('all')"> TODOS</button>
+  <button class="btnf" onclick="filterSelection('sempm')"> Todos sem PM</button>
+  <button class="btnf" onclick="filterSelection('sempvt')"> PELVT sem pm</button>
+  <button class="btnf" onclick="filterSelection('semobst')"> OBST Sem PM</button>
+  <button class="btnf" onclick="filterSelection('semmorfo')"> morfo Sem PM</button>
+  <button class="btnf" onclick="filterSelection('semeco')"> Eco sem PM</button>
+</div>
+<div class="container">
+  <div class="filterDiv semobst">
+  <button type="button" class="collapsible">DR. Thiago Rodrigues</button>
+  <div class="content">
+    <h3>** NÃO FAZ PACIENTE CADEIRANTE E ACAMADO, POIS NÃO TEM COMO ENTRAR NA SALA, NÃO INSISTAM NÃO CABE.** </h3>
+    <ul>
+ <li>  MORFOLOGICO APENAS 3 POR AGENDA, SENDO PERMITIDO SOMENTE NOS PRIMEIROS HORÁRIOS </li>
+ <li>  REALIZA SOMENTE MORFO DE 2° TRIMESTRE : 20 Á 24 SEMANAS; </li>
+</ul>
+ <p>   **NÃO REALIZA ABDOMEN TOTAL COM DOPPLER E ABDOMEN SUPERIOR COM DOPPLER.  </p>
+ __________________________________________________________________
+  <h3>                 -  ULTRASSOM DE MAMAS / MAMAS COM DOPPLER: </h3>
+ <ul>
+   <li> •  Pacientes acima de 40 anos  é obrigatório apresentar mamografia anterior completa,sendo ( laudo + imagem) de no máximo 1 ano; </li>
+
+   <li> • Se o paciente tiver no pedido mamografia e usg de mamas, agendar primeiro a mamografia e após sair o resultado(4 dias após) agendar o usg mamas, pois Dr. precisa da mamografia recente.</li>
+ </ul>
+__________________________________________________________________
+ <h3>                                     INFORMAÇÕES GERAIS:</h3>
+<ul>
+ <li> ATÉ 3 EXAMES EM 1 HORÁRIO;</li>
+ <li> SÓ REALIZA OBST SEM PEDIDO Á PARTIR DE 10 SEMANAS;</li>
+ <li> SE ATENTAR, POIS ANTES DE 10 SEMANAS É NECESSARIO PELVT E ELE NAO FAZ SEM PEDIDO MÉDICO. SENDO ASSIM, OBSTETRICO ABAIXO DE 10 SEMANAS NÃO FAZ SEM PEDIDO MÉDICO, E MESMO QUE O PACIENTE INSISTA NÃO AGENDA COM ELE, POIS NÃO É POSSIVEL VISUALIZAR NADA.</li> 
+ <li> PELVG-PELVICO: SOMENTE ACIMA DE 8 ANOS, ANTES DISSO NÃO REALIZA E NÃO ABRE EXCEÇÃO. </li>
+ <li> PERMITIDO APENAS 1 ACOMPANHANTE EM SALA;</li>
+ <li> NÃO REALIZA US INFANTIL , SOMENTE ACIMA DE 12 ANOS;</li>
+ </ul>
+__________________________________________________________________
+<h3>                                          EXAMES REALIZADOS: </h3> 
+<ul>
+ <li> PENIS SEM DOPPLER / SEM MEDICAMENTO</li>
+ <li> TIREOIDE </li>
+ <li>TIREOIDE COM DOPPLER</li>
+ <li> TRANSVAGINAL </li>
+ <li> TRANSVAGINAL COM DOPPLER</li>
+ <li> OBST SIMPLES / COM DOPPLER - UNICO/GEMELAR/TRIGEMEOS</li>
+ <li> MORFOLOGICO / MORFOLOGICO COM DOPPLER / MORFOLOGICO GEMELAR</li>
+
+ <li> ABDOME TOTAL  - FRIZAR LUFTAL E JEJUM</li>
+
+ <li> ABDOME SUPERIOR -  É NECESSÁRIO LUFTAL E NÃO BEBER ÁGUA</li>
+
+
+ <li> TESTICULOS /TESTICULOS COM DOPPLER </li>
+ <li> ESCROTAL / ESCROTAL COM DOPPLER</li>
+ <li> PARTES MOLES / PARTES MOLES COM DOPPLER</li>
+
+<h3><li>  ARTICULAÇÕES: </li></h3>
+OMBROS/COTOVELOS / ESCAPULAS / PUNHOS/MÃOS / JOELHOS / TORNOZELOS/ CALCANEOS / ANTEBRAÇO / BRAÇO / COXAS/ PERNAS/ PÉS / PANTURRILHAS / QUADRIS ;
+
+<li>  PAREDE ABDOMINAL </li>
+<li>  PROSTATA / PROSTATA TRANSRETAL</li>
+ <li> APARELHO URINÁRIO</li>
+ <li> CERVICAL</li>
+ <li> INGUINAL</li>
+ <li> PELVICO GINECOLOGICO / PELVICO GINECOLOGICO COM DOPPLER* APARTIR DE 8 ANOS.</li>
+ <li> TORÁX</li>
+ <li> PERINEO</li>
+ <li> GLANDULAS SALIVARES</li>
+  <li>TRANSFONTONELA - ATÉ 4 MESES- SE A FONTANELA ESTIVER ABERTA. SUPERIOR A ISSO CONFIRMAR COM O DR. TIAGO</li>
+</ul>
+<p>NAO FAZ TIREOIDE EM CRIANCA, SÓ A PARTIR DE 8 ANOS.</p>
+
+<p>PELVG SÓ FAZ ACIMA DE 6 ANOS.</p>
+
+<p>NÃO REALIZA PABDO EM MENORES DE 7 ANOS.</p>
+
+<p>NAO REALIZA PACIENTE CADEIRANTE. NAO INSISTAM</p>
+
+<p>NÃO REALIZA ABDOMEN TOTAL COM DOPPLER E ABDOMEN SUPERIOR COM DOPPLER. </p>
+  </div>
+</div>
+
+<div class="filterDiv sempm">
+  <button type="button" class="collapsible">DR. Roberto Puty</button>
+  <div class="content">
+TEL DR.:15 98131-7888
+__________________________________________________________________
+<h3> Informações gerais: </h3>
+<ul>
+<li> AGENDAR EXAMES EM SEQUENCIA, NÃO DEIXAR BURACOS NA AGENDA!</li>
+
+<li>ELASTOGRAFIA HEPATICA - AGENDAR EM 3 HORÁRIOS </li>
+
+<li> ARTICULAÇÃO COM POWER DOPPLER ou DOPPLER SÃO 1 HORARIO POR ARTICULAÇÃO!  (REALIZADO SOMENTE NA UNIDADE PENHA E VERGUEIRO) SOMENTE ESSE EXAME ESPECIFICO DE ARTICULAÇÃO, OS DEMAIS PODEM SER AGENDADOS NORMALMENTE.</li>
+
+<li> RELIZA TODOS OS EXAMES SEM PEDIDO MÉDICO, EXCETO US TRANSVAGINAL E US PRÓSTATA VIA TRANSRETAL.</li>
+
+<li> REALIZA ULTRASSOM DAS MAMAS SEM EXAMES ANTERIORES EM QUALQUER IDADE. (PARA EXAMES COMPARATIVOS, NECESSITA DO ANTERIOR!)</li>
+
+<li> PACIENTE QUE USA SONDA P FAZER US QUE PRECISA BEXIGA CHEIA, NO ATO DO CADASTRO FECHAR A SONDA E PEDIR PARA BEBER 6 COPOS DE AGUA.</li>
+
+<li>  NÃO REALIZA: ULTRASSOM OBSTÉTRICO (E NENHUM OUTRO EXAME GESTACIONAL,NEM TRANSVAGINAL DE INICO DE GESTAÇÃO).</li>
+
+<li> REALIZA EXAMES EM TODOS APARELHOS EXECETO POWER DOPPLER QUE SÓ REALIZA NA UNIDADE DA PENHA.</li>
+</ul>
+__________________________________________________________________
+<h3>PRESTAR ATENÇÃO NO LIVRO </h3> 
+
+<h4>ATENÇÃO MARCAR NUMERO DE CARTEIRINHA CASO SEJA CONVENIO,INFORMAÇÕES DA GUIA, E DATA DO PEDIDO MÉDICO ANOTAR NAS OBSERVAÇÕES !</h4>
+<ul>
+<li>4 EXAMES EM UM HORÁRIO  </li>
+<li> ARTICULAÇÕES: ATÉ 10  EM UM HORÁRIO </li>
+ <li>(COM DOPPLER: 1 HORÁRIO POR ARTICULAÇÃO!) </li>
+ <li> DOPPLER VENOSO/ARTERIAL: UM HORÁRIO PARA CADA LADO! (EX: 2 MEMBROS, DOIS HORÁRIOS E SE TIVER ARTERIAL VENOSO DAS DUAS PERNAS 4 HORÁRIOS)</li>
+
+<li style="font-weight: bolder;">**DR NÃO REALIZA US ABTOT PARA REFLUXO E QUADRIL INFANTIL**</li>
+</ul>
+_________________________________________________________________
+<h3>EXAMES  REALIZADOS:</h3>
+<ul>
+<li>US TRANSVAGINAL COM PREPARO INTESTINAL</li>
+<li>US DOPPLER AORTA ILIACA </li>
+<li>US PARTES MOLES</li>
+<li>US PARTES MOLES COM DOPPLER</li>
+<li>US CLAVICULAR+SUPRA CLAVICULAR</li>
+<li>US GLANDUAS ADRENAIS</li>
+<li>US HIPOCONDRIO</li>
+<li>US TORAX </li>
+<li>US PROSTATA TRANSRETAL / TRANSRETAL COM DOPPLER</li>
+<li>US INGUINAL BILATERAL</li>
+<li>US INGUINAL BILATERAL COM DOPPLER</li>
+<li>US TESTICULOS</li>
+<li>US TESTICULOS COM DOPPLER</li>
+<li>US ESCROTAL</li>
+<li>US ESCROTAL COM DOPPLER</li>
+<li>US DOPPLER DE CAROTIDAS E VERTEBRAIS</li>
+<li>US DOPPLER COLORIDO ARTERIAL  E VENOSO DE MEMBROS INFERIORES</li>
+<li>US PAROTIDAS</li>
+<li>US CERVICAL</li>
+<li>US CERVICAL COM DOPPLER</li>
+<li>US TIREOIDE</li>
+<li>US TIREOIDE COM DOPPLER</li>
+<li>US MAMAS</li>
+<li>US MAMAS COM DOPPLER</li>
+<li>US AXILAS </li>
+<li>US AXILAS COM DOPPLER</li>
+<li>US PAREDE ABDOMINAL</li>
+<li>US PAREDE ABDOMINAL COM DOPPLER</li>
+<li>US ABDOME TOTAL</li>
+<li>US ABDOME SUPERIOR</li>
+<li>US APARELHO URINÁRIO </li>
+<li>US PELVICO GINECOLOGICO</li>
+<li>US PELVICO GINECOLOGICO COM DOPPLER</li>
+<li>US PELVICO TRANSVAGINAL</li>
+<li>US PELVICO TRANSVAGINAL COM DOPPLER</li>
+<li>US ESCAPULAR</li>
+<li>US ARTICULAÇÕES (TODAS- COM E SEM DOPPLER)</li>
+<li>US POWER DOPPLER  ARTICULAÇÃO            </li>                           
+</ul>
+__________________________________________________________________
+<H3>NÃO REALIZA: </H3>
+<ul>
+<li>NÃO REALIZA: VENOSO/ARTERIAL DOS MEMBROS SUPERIORES</li>
+<li>DOPPLER DE VEIA CAVA E ILÍACAS</li>
+<li>CRÂNIO NEM TRANSFONTONELA </li>
+<li>ABDOMEM TOTAL COM DOPPLER</li>
+<li>ABDOMEM SUPERIOR COM DOPPLER</li>
+<li>APARELHO URINÁRIO COM DOPPLER </li>
+<li>APARELHO URINÁRIO DINÂMICO</li>
+<li>PELVICO TRANSVAGINAL PARA AVALIAÇÃO COLO UTERO</li>
+<li>PELVICO TRANSVAGINAL DE CONTROLE DE OVULAÇÃO </li>
+__________________________________________________________________
+<li>- PACIENTE CADEIRANTE APENAS NA UNIDADE PENHA</li>
+<li>- ENCAIXES APENAS COM A PERMISSÃO DO DOUTOR</li>
+<li>- MENOR DE IDADE APENAS COM RESPONSÁVEL MAIOR DE IDADE!</li>
+<li>- PARTES MOLES FAZ DE TODO CORPO</li>
+__________________________________________________________________
+                               
+</ul>
+  </div>
+</div>
+ <div class="filterDiv sempm semobst semmorfo sempvt">
+  <button type="button" class="collapsible">DRA. Daiana Valiente</button>
+  <div class="content">
+<h3>INFORMAÇÕES IMPORTANTE </h3>
+
+<h4>***NÃO AGENDAR DOPPLER DE MEMBROS INFERIORES E SUPERIORES NAS AGENDAS DE SEXTA-FEIRA Á TARDE*****</h4>
+
+<h4>PACIENTES ACIMA DE 40 ANOS É OBRIGATÓRIO TRAZER MAMOGRAFIA (MÁXIMO DE 1 ANO). NÃO REALIZA SEM A MAMOGRAFIA.</h4>
+
+<h4>ULTRASSOM DE MAMAS E MAMOGRAFIA NO MESMO DIA, DESDE QUE A MAMO SEJA FEITA 1 HORA ANTES DO ULTRASSOM.</h4>
+<br>
+<ul>
+<li>ULTRASSOM 4D E FOTO 4D DE 26 A 30 SEMANAS</li>
+
+<li>REALIZA CHÁ REVELAÇÃO ( PORÉM SÓ INFORMA O SEXO Á PARTIR DE 20 SEMANAS)</li>
+
+<li>REALIZA TODOS OS EXAMES SEM PEDIDO MEDICO , EXCETO EXAMES COM DOPPLER</li>
+
+<li>OBST SE O PACIENTE TIVER , TRAZER CART PRÉ NATAL É NECESSÁRFIO TRAZER</li>
+
+<li>É PERMITIDO 1 ACOMPANHANTE EM SALA (NÃO É PERMITIDO CRIANÇA)</li>
+
+<li>US MAMAS: PACIENTES ACIMA DE 40 ANOS É OBRIGATÓRIO TRAZER MAMOGRAFIA (MÁXIMO DE 1 ANO). NÃO REALIZA SEM A MAMOGRAFIA.</li>
+
+<li>REALIZA ULTRASSOM DE MAMAS E MAMOGRAFIA NO MESMO DIA, DESDE QUE A MAMO SEJA FEITA 1 HORA ANTES DO ULTRASSOM, NO ENTANTO, ESSA INFORMAÇÃO, É UMA PARTICULARIDADE DE SUA AGENDA NA UNIDADE VERGUEIRO</li>
+</ul>
+<h3>HORARIO DE ENCAIXE AGENDAR SOMENTE USG SIMPLES</h3>
+<ul>
+<li>PROST + APURI 1HORARIO</li>
+<li>MAMAS + AXILAS 1 HORARIO</li>
+<li>ECOC + ECOV 1 HORARIO</li>
+<li>DOPAR + (ABTOT OU APURI) 1 HORARIO </li>
+<li>MAMAS+ PELVT 1HORARIO</li>
+<li>ABTOT + PROST 1HORARIO</li>
+<li>ABTOT + PELVG 1HORARIO</li>
+<li>ABTOT + APURI 1HORARIO</li>
+
+</ul>
+__________________________________________________________________
+<h3> EXAMES REALIZADOS: </h3>
+
+<h4>EXAMES GESTACIONAIS:</h4>
+<ul>
+<li> 4D CONVENCIONAL E 4D HD LIVE -  FETO UNICO OU GEMELAR - 2 HORÁRIOS
+(LEMBRANDO QUE SOMENTE PENHA E ZONA OESTE REALIZA 4D CONVENCIONAL)</li>
+
+<li>OBSTÉTRICO - 1 HORÁRIO</li>
+<li>OBSTÉTRICO GEMELAR  -  2 HORÁRIOS</li>
+<li>OBSTÉTRICO TRIGEMEOS - 2 HORÁRIOS</li>
+<li>OBSTÉTRICO COM DOPPLER + PERFIL BIOFISICO  - 2 HORÁRIOS</li>
+<li>OBSTÉTRICO COM DOPPLER + PERFIL BIOFISICO  GEMELAR - 3 HORÁRIOS</li>
+<li>OBSTÉTRICO COM DOPPLER GEMELAR -  2 HORÁRIOS</li>
+<li>OBSTÉTRICO COM DOPPLER TRIGEMEOS - 3 HORÁRIOS</li>
+<li>MORFOLOGICO - 2 HORÁRIOS</li>
+<li>MORFOLOGICO COM DOPPLER - 2 HORARIOS</li>
+<li>MORFOLOGICO COM DOPPLER GEMELAR - 2 HORARIOS </li>
+__________________________________________________________________
+<h3>ULTRASSONOGRAFIA EM GERAL:</h3>
+
+<li>PARTES MOLES -  1 HORÁRIO</li>
+<li>PARTES MOLES COM DOPPLER - 1 HORÁRIO</li>
+<li>CLAVICULAR + SUPRA CLAVICULAR - 1 HORÁRIO</li>
+<li>GLANDULAS ADRENAIS - 1 HORÁRIO</li>
+<li>HIPOCONDRIO - 1 HORÁRIO</li>
+<li>PAROTIDAS - 1 HORÁRIO</li>
+<li>CERVICAL - 1 HORÁRIO</li>
+<li>CERVICAL COM DOPPLER - 1 HORÁRIO </li>
+<li>TIREOIDE - 1 HORÁRIO</li>
+<li>TIREOIDE COM DOPPLER - 1 HORÁRIO</li>
+<li>MAMAS -1 HORÁRIO</li>
+<li>MAMAS COM DOPPLER - 1 HORÁRIO</li>
+<li>AXILAS -1 HORÁRIO</li>
+<li>AXILAS COM DOPPLER - 1 HORÁRIO</li>
+<li>PAREDE ABDOMINAL - 1 HORÁRIO</li>
+<li>PAREDE ABDOMINAL COM DOPPLER -1 HORÁRIO</li>
+<li>ABDOME TOTAL - 1 HORÁRIO</li>
+<li>ABDOME TOTAL COM DOPPLER - 2 HORÁRIOS</li>
+<li>ABDOME SUPERIOR- 1 HORÁRIO</li>
+<li>ABDOME SUPERIOR COM DOPPLER  2 HORÁRIOS</li>
+<li>APARELHO URINARIO - 1 HORÁRIO</li>
+<li>APARELHO URINARIO COM DOPPLER 2 HORÁRIOS</li>
+<li>PELVICO GINECOLOGICO -1 HORÁRIO</li>
+<li>PELVICO GINECOLOGICO COM DOPPLER - 1 HORÁRIO</li>
+<li>PELVICO TRANSVAGINAL -1 HORÁRIO</li>
+<li>TRANSVAGINAL COM DOPPLER - 2 HORÁRIOS</li>
+
+<li>TRANSVAGINALL PARA AVALIACAO COLO DO UTERO - 1 HORÁRIO</li>
+
+<li>TRNASVAGINAL PARA CONTROLE DE OVOLUACAO - 1 HORÁRIO</li>
+
+<li>TRANSVAGINAL COM PREPARO INTESTINAL - 1 HORÁRIO</li>
+
+<li>PROSTATA TRANSRETAL 1 HORÁRIO</li>
+
+<li>TRANSRETAL COM DOPPLER 1 HORÁRIO</li>
+
+<li>PROSTATA VIA ABDOMINAL - 1 HORÁRIO</li>
+
+<li>PROSTATA VIA ABDOMINALC OM DOPPLER 1 HORÁRIO</li>
+
+<li>IGUINAL BILATERIAL - 1 HORÁRIO</li>
+
+<li>INGUINAL BILATERAL COM DOPPLER - 1 HORÁRIO</li>
+
+<li>TESTICULOS - 1 HORÁRIO</li>
+
+<li>TESTICULOS COM DOPLER - 1 HORÁRIO</li>
+
+<li>BOLSA ESCROTAL - 1 HORÁRIO</li>
+
+<li>BOLSA ESCROTAL COM DOPPLER - 1 HORÁRIO</li>
+
+<li>DOPPLER ARTERIAS RENAIS  - 2 HORÁRIOS</li>
+
+<li>DOPPLER DE RINS TRANSPLANTADO UNILATERAL - 2 HORÁRIO</li>
+
+<li>DOPPLER DE CAROTIDAS E VERTEBRAIS - 2 HORÁRIOS</li>
+
+<li>DOPPLER ARTERIAL DE MEMBROS INFERIORES -  2 HORÁRIO</li>
+
+<li>DOPPLER ARTERIAL DE MEMBROS SUPERIORES -  2 HORÁRIO</li>
+
+<li>DOPPLER VENOSO DE MEMBROS SUPERIORES -   2 HORÁRIO</li>
+
+<li>DOPPLER VENOSO DE MEMBROS INFERIORES -  2 HORÁRIO</li>
+
+<li>AORTA E ILIACAS -   2 HORÁRIO</li>
+
+<li>DOPPLER DE AORTA ILIACA E VEIA CAVA -  2 HORÁRIO<</li>
+
+</ul>
+__________________________________________________________________
+<h3>ARTICULAÇÕES MEMBROS SUPERIORES:</h3>
+<ul>
+<li>OMBROS - OMBROS COM DOPPLER- 1 HORÁRIO</li>
+<li>BRAÇO - BRAÇO COM DOPPLER - 1 HORÁRIO</li>
+<li>ANTEBRAÇO - ANTEBRAÇO COM DOPPLER - 1 HORÁRIO</li>
+<li>MAOS - MAOS COM DOPPLER - 1 HORÁRIO</li>
+<li>COTOVELOS - COTOVELOS COM DOPPLER - 1 HORÁRIO</li>
+<li>PUNHOS -  PUNHOS COM DOPPLER - 1 HORÁRIO</li>
+__________________________________________________________________
+                            •  ARTICULAÇÕES MEMBROS INFERIORES:
+
+<li>QUADRIS  -  QUADRIS COM DOPPLER - 1 HORÁRIO</li>
+<li>COXAS - COXAS COM DOPPLER - 1 HORÁRIO</li>
+<li>JOELHOS - JOELHOS COM DOPPLER - 1 HORÁRIO</li></li>
+<li>PERNAS - PERNAS COM DOPPLER - 1 HORÁRIO</li>
+<li>TORNOZELOS -  TORNOZELOS COM DOPPLER - 1 HORÁRIO</li>
+<li>CALCANEO - CALCANEO COM DOPPLER - 1 HORÁRIO</li>
+<li>PES -  PES COM DOPPLER - 1 HORÁRIO</li>
+
+<li>POWER DOPPLER ARTICULAR -  1 HORÁRIO - (SOMENTE NA UNIDADE VERGUEIRO)</li>
+</ul>
+  </div>
+</div>
+<div class="filterDiv semobst semmorfo"> 
+ <button type="button" class="collapsible" >Dra. Julia Belini</button>
+  <div class="content">
+
+TEL DRA:15 99782-0368
+__________________________________________________________________
+<h3>Informações gerais: </h3>
+
+-AGENDAR EXAMES EM SEQUENCIA, NÃO DEIXAR BURACOS NA AGENDA!!
+
+- AGENDAR UM EXAME POR HORÁRIO.
+
+-OBST SEM PEDIDO A PARTIR DE 10 SEMANAS COM CARTEIRINHA DE PRÉ NATAL! 
+
+- REALIZA CHÁ REVELAÇÃO (ACIMA DE 17 SEMANAS)
+- DRª JULIA SÓ INFORMA O SEXO A PARTIR DE 17 SEMANAS SE O BEBE COLABORAR 
+
+- MORFO FETO UNICO - 1 HORÁRIO
+- MORFO GEMELAR - 2 HORÁRIOS
+- MORFO COM DOPPLER - 2 HORÁRIOS
+- MAMAS + PELVT - AGENDAR EM 1 HORARIO
+- MAMAS + AXILIAS + PELVT- 1 HORÁRIO
+- MORFO + PELVT (FETO UNICO) - 1 HORÁRIOS
+- MORFO + PELVT (GEMELAR) - 2 HORÁRIOS
+- US TRANSVAGINAL COM PREPARO INTESTINAL - 1 HORÁRIO
+
+- US DE MAMAS, REALIZA SEM EXAME ANTERIOR. 
+
+- US PROSTATA TRANS RETAL SÓ REALIZA NA UNIDADE DE ITU.
+__________________________________________________________________
+                         INFORMAÇÕES SOBRE 4D HD LIVE E FOTO:
+
+- AGENDAR SOMENTE 2 4D HDLIVE POR AGENDA, SEMPRE NOS PRIMEIROS 2 HORARIOS DA AGENDA 
+
+              - REALIZA PREFERENCIALMENTE DE 24 Á 25 SEMANAS
+
+- NÃO IRÁ REALIZAR 4D NO MEIO DA AGENDA!!
+- AGENDAR 4D HD LIVE EM 1 HORARIO.
+- FOTO 4D APENAS DE 24 A 29 SEMANAS .
+- NÃO REALIZA 4D HD LIVE GEMELAR 
+
+__________________________________________________________________
+
+DOPAR  (DOPPLER DE ARTERIAS RENAIS SEMPRE AGENDAR EM 2 HORÁRIOS ).
+__________________________________________________________________
+                                   EXAME DE MORFOLOGICO:
+
+ 1° TRIMESTRE:  FEITO DE 11 A 14 SEMANAS, OBRIGATÓRIO PEDIDO MÉDICO! 
+- O RESULTADO LIBERADO NO DIA SEGUINTE. (SEMPRE ANOTAR NA OBS A SEMANAS DO PACIENTE) 
+- AGENDAR EM 1 HORARIOS FETO UNICO , GEMELAR 2 HORARIOS, AMBOS OS EXAMES NECESSÁRIO BEXIGA CHEIA ! 
+
+2° TRIMESTRE: FEITO DE 20 Á 24 SEMANAS,(SENDO NO MAXIMO 25 SEMANAS) REALIZADO SEM PEDIDO MEDICO.
+- RESULTADO EM 40 MINUTOS. ( SEMPRE ANOTAR NA OBS A SEMANAS DO PACIENTE). 
+- AGENDAR EM 1 HORARIOS FETO UNICO , GEMELAR 2 HORARIOS, AMBOS OS EXAMES NECESSÁRIO BEXIGA CHEIA ! 
+__________________________________________________________________
+
+- NÃO É PERMITIDO ENTRADA DE CRIANÇAS MENORES DE 12 ANOS, LEMBRANDO QUE MAIORES DE 12 JÁ CONTA COMO ACOMPANHANTE ADULTO!!!
+__________________________________________________________________ 
+
+AGENDAR OBST+ PELVT     ( 2 HORÁRIOS)
+  </div>
+</div>
+
+<div class="filterDiv sempm semobst semmorfo sempvt">
+  <button type="button" class="collapsible" >Dra. MARIA Hercidia</button>
+  <div class="content">
+TEL DRA.: 15 99772-6997
+__________________________________________________________________
+    
+CONVENIO: ANOTAR NUMERO DA CARTEIRINHA, DATA DO PEDIDO MÉDICO, CAMPO 5,6 E 30 ( SE ESTIVER COM GUIA LIBERADA) !!!
+__________________________________________________________________
+                                   Informações gerais: 
+
+-AGENDAR EXAMES EM SEQUENCIA, NÃO DEIXAR BURACOS NA AGENDA!!
+
+-MORFOLOGICO EM 2 HORARIOS
+
+- REALIZA CHÁ REVELAÇÃO A PARTIR DE 15 SEMANAS!
+( NECESSÁRIO 1 ACOMPANHANTE, A AUXILIAR DE SALA IRÁ FALAR PARA O ACOMPANHANTE O SEXO )
+
+- PERMITIDO SOMENTE 2 ACOMPANHANTES ADULTOS EM SALA, NÃO É PERMITIDO CRIANÇA ! 
+
+- FAZ TODOS OS EXAMES SEM PEDIDO MÉDICO
+- NÃO REALIZA US 4D GEMELAR
+- SÓ REALIZA US DOS MEMBROS SUPERIORES 
+__________________________________________________________________
+
+- MAMOGRAFIA E ULTRASSOM DE MAMAS, QUANDO REALIZADO NO MESMO DIA , MARCAR COM 1 HORA DE DIFERENÇA, PRIMEIRAMENTE A MAMOGRAFIA !!
+
+- US MAMAS, NECESSÁRIO EXAMES ANTERIORES, SE FOR A PRIMEIRA VEZ OU PERDEU PODE AGENDAR NORMALMENTE. ( SE PACIENTE TIVER EXAMES ANTERIORES, OBRIGATÓRIO ESTAR TRAZENDO)
+
+__________________________________________________________________                              EXAMES REALIZADOS: 
+
+* ARTICULAÇÃO ATÉ 3 EM 2 HORÁRIOS*
+
+-AXILAS
+- OMBRO
+- COTOVELO
+- PUNHO
+- ABDOMEN TOTAL - AGENDAR EM 2 HORÁRIOS ( SÓ FAZ DE MANHA ) 
+- ABDOMEN SUPERIOR ( SÓ FAZ DE MANHA)
+- APARELHO URINARIO
+- CERVICAL
+- TIREOIDE
+- PARTES MOLES
+- OBSTÉTRICO
+- MORFOLOGICO
+- OBSTÉTRICO COM DOPPLER - AGENDAR EM 2 HORÁRIOS
+- PELVICO GINECOLOGICO
+- PELVICO TRANSVAGINAL (ACIMA DE 50 ANOS AGENDAR EM 2 HORÁRIOS)
+- PELVICO TRANSVAGINAL COM DOPPLER - AGENDAR EM 2 HORÁRIOS
+- MAMAS - AGENDAR EM 2 HORÁRIOS
+- US 4D HD LIVE - AGENDAR EM 2 HORÁRIOS
+- PROSTATA ABDOMINAL
+- INGUINAL
+- PAREDE ABDOMINAL 
+</div>
+</div>
+
+<div class="filterDiv sempm semobst semmorfo sempvt">
+  <button type="button" class="collapsible" >DR. Maicon Magalhaes</button>
+  <div class="content">
+
+DR. MAICON: 15 98817-8479
+__________________________________________________________________
+                                  INFORMAÇÕES GERAIS:
+
+- REALIZA TODOS OS EXAMES SEM PEDIDO MÉDICO;
+- REALIZA CHÁ REVELAÇÃO Á PARTIR DE 14 SEMANAS;
+- ULTRASSOM DAS MAMAS É OBRIGATÓRIO EXAMES ANTERIORES;
+- É PERMITIDO APENAS 2 ACOMPANHANTES EM SALA;
+- REALIZA MORFOLOGICO SEM PM
+__________________________________________________________________
+
+- MORFOLOGICO: 2 HORÁRIOS
+- MAMAS E PELVT: 2 HORÁRIOS 
+- ARTICULAÇÃO - ATÉ 3 ARTICULAÇÃO : 1 HORÁRIO
+__________________________________________________________________
+                                  EXAMES REALIZADOS:
+
+Abdome Superior
+Abdome Total
+Antebraço
+Aparelho Urinário
+Braço
+Calcaneo
+Cervical
+Cotovelo
+Coxa
+Coxo-Femural (adulto)
+Coxo-Femural (infantil)
+Doppler Abdomem Superior - infantil
+Doppler Mamas
+Doppler Pélvico
+Doppler Saco Escrotal - infantil
+Doppler Tireoíde
+Doppler Transvaginal
+Hipocondrio Direito
+Inguinal
+Joelho
+Mamas
+Mão (dedos)
+Morfológico 
+Morfológico  com doppler
+Obstétrico 1º trimestre (endovaginal)
+Obstétrico com amniocentese
+Obstétrico com Translucência nucal
+Obstétrico convencional - Gemelar
+Obstétrico convencional -1 - feto
+Obstétrico convencional com doppler colorido - 1 feto
+Obstétrico convencional com doppler colorido - gemelar
+Ombro
+Panturilha
+Parede Abdominal
+Partes Moles
+Pélvico  Transvaginal
+Pelvico Ginecológico
+Pélvico Transvaginal p/ controle de ovulação
+Pélvico via Abdominal p/ controle de ovulação
+Perineal
+Perna
+Pés
+Próstata via Abdominal 
+Próstata via Transretal
+Pulmão / Tórax
+Punho
+Quadril (adulto)
+Quadril (infantil)
+Retroperitônio
+Saco Escrotal - infantil
+Salivares
+Testículos - infantil
+Tireóide
+Tornozelo
+
+__________________________________________________________________
+
+    </div>
+    </div>
+
+<div class="filterDiv semobst">
+ <button type="button" class="collapsible">Dra. Luciane</button>
+  <div class="content">
+
+- DRA NÃO FAZ PELVT COM PEDIDO DE COREN, DEMAIS EXAMES REALIZA
+__________________________________________________________________
+
+- DRA LUCIANE NÃO FAZ CHÁ REVELAÇÃO. 
+(FAVOR PERGUNTAR ANTES DE REALIZAR O AGENDAMENTO!)
+__________________________________________________________________
+                                             EXAMES REALIZADOS:
+
+- OBSTETRICO
+- OBSTETRICO GEMELAR 
+- OBSTETRICO COM DOPPLER
+- TRANSVAGINAL 
+- PELVICO GINECOLOGICO 
+- 4D HD LIVE É REALIZADO EM QUALQUER PERIODO GESTACIONAL 
+
+*** SÓ REALIZAMOS 4D HD LIVE ******
+
+- AGENDAR 4D HDLIVE SOMENTE NO COMEÇA DA AGENDA;
+- AGENDAR SOMENTE 2 4D HDLIVE POR AGENDA;
+__________________________________________________________________
+                           INFORMAÇÃO SOBRE US OBSTÉTRICO:
+
+- REALIZA OBST SEM PEDIDO MÉDICO Á PARTIR DE 8 SEMANAS GESTACIONAL
+
+- MENOR QUE 8 SEMANAS, SOMENTE O PELVT , SENDO NECESSÁRIO PEDIDO MÉDICO COM CRM;
+
+- NÃO É OBRIGATÓRIO CARTEIRINHA DE PRÉ NATAL
+
+- PERMITIDO APENAS 1 ACOMPANHANTE EM SALA 
+__________________________________________________________________
+                           INFORMAÇÃO SOBRE O 4D HD LIVE:
+
+    - DRA LUCIANE REALIZA 4D EM QUALQUER IDADE GESTACIONAL, QUANTO MAIOR IDADE MAIS IMPORTANTE FAZER O PREPARO CORRETAMENTE.  
+
+    -   AGENDAR EM 2 HORÁRIO.
+
+    - PREPARO: TOMAR DE 2 A 3 LITROS DE ÁGUA TODOS OS DIAS ATÉ A DATA DA REALIZAÇÃO DO EXAME. NO DIA DO EXAME REALIZAR UM LANCHE UMA HORA ANTES DO HORÁRI0 MARCADO (SUCO, FRUTAS, SANDUICHE ETC...).
+
+    - EVITAR DE FAZER AGENDAMENTOS MUITO PRÓXIMO DO DIA QUE A PACIENTE LIGA,  POIS NÃO DÁ TEMPO DA PACIENTE REALIZAR PREPARO.
+   
+    - ORIENTAR A PACIENTE A COMPARECER COM ANTECEDÊNICA DE PELO MENOS 15 MIN DO HORÁRIO DO EXAME.
+__________________________________________________________________
+ 
+-  NÃO DEIXAR BURACOS NA AGENDA, QUEM AGENDAR NO ULTIMO HORÁRIO E NÃO ENCHER VAI ANTECIPAR OS PACIENTES!
+
+
+
+
+
+  </div>
+ </div>
+
+<div class="filterDiv semeco">
+  <button type="button" class="collapsible">Dra. LAUREEN - ECOCARDIO</button>
+  <div class="content">
+
+TELEFONE DRA. LAUREN: 15 99788-0520
+
+- RECESSO: 24/12 Á 04/01/2021
+---------------------------------------------------------------------------------------------------
+                                  !!!!!!IMPORTANTE!!!!!!
+
+
+             !!!!!!! AGENDAR EM SEQUÊNCIA NÃO DEIXAR BURACO !!!!!
+HORARIO DE ECOST 10h, 10h30, 11h00, NÃO AGENDAR ECO1 NESTE HORARIO
+                                          (SEG E TER)
+__________________________________________________________________
+                     EXAMES REALIZAMOS: ECO INFANTIL,ADULTO E ESCOST.
+
+-DRA NÃO ACEITA PM DO DR° PAULO FERNANDO ARRUDA JOÃO. 
+
+- AGENDAR EM SEQUENCIA,NÃO DEIXAR BURACO NA AGENDA,POIS DRA. NÃO FICA ESPERANDO !!
+
+-ECO INFANTIL:
+ 
+- AGENDAR EM 03 HORÁRIOS CRIANÇAS ATÉ 01 ANO ;
+- AGENDAR EM 02 HORÁRIO ATÉ 5 ANOS;
+- AGENDAR EM 1 HORÁRIO ACIMA DE 6 ANOS;
+
+-  NÃO REALIZA ECOST COM DIPIRIDAMOL !!
+__________________________________________________________________
+
+SEGUNDA:
+08:00 ás 10:00 - AGENDAR ECO
+10:30- 11:00-11:30 - ECOST / TRASESOFAGICO 
+
+TERÇA:
+08:00 ás 10:00 - AGENDAR ECO
+10:30- 11:00-11:30 - ECOST / TRASESOFAGICO 
+
+SEXTA:
+NÃO IRÁ REALIZAR ECOST
+ECO: DAS 08:00 ÁS 11:00
+__________________________________________________________________
+
+-ECOST: ORIENTAR PACIENTE TOMAR OS MEDICAMENTOS NORMALMENTE PARA PRESSÃO NO DIA DO EXAME, EXCETO OS QUE PRECISA SUSPENDER.
+
+
+- NÃO REALIZA ECO INFANTIL EM PACIENTES QUE FAZEM ACOMPANHAMENTO COM A DRA. VIRNA, ANTES DO AGENDAMENTO NECESSÁRIO SEMPRE PERGUNTAR AO PACIENTE. 
+__________________________________________________________________
+                            MEDICAMENTOS QUE NECESSITAM SUSPENDER:
+
+Medicamentos que necessitam suspender por 1 semana
+ABLOK                                                                                               DOGOXINA
+DIVELOL
+CTUS
+INERAL OU PROPANOLOL
+KARVIL
+METROPOLOL OU SELOKEN
+NEBILET OU NEBIVOLOL
+NEBLOK
+SELOPESS 
+SELOZOK
+SOTACOR
+TENADREN
+TENORIK
+TIMOLOL
+VISKEN OU PINDOLOL
+ZARMINE                      
+ANGIPRESS
+ATENOLOL
+ATENOL
+BETALOR
+BIZOPROLOL
+CARDILOL
+CARVEDILOL
+COGARD
+CONCARDIO
+CONCOR
+
+MEDICAMENTOS QUE NECESSITAM SUSPENDER POR 3 DIAS
+BALCOR                                     IZOCORD
+CALTERN                                   MONOCORDIL
+CARDIZEN                                NITRAPAN
+CLORANA                                 SUSTRATE
+CORONAR                                VASCLIN
+DILACORON                           VASTAREL
+DILTIAZEN                                  VERAPAMIL
+ISORSIL
+
+MEDICAMENTOS QUE NÃO REQUER SUSPENSÃO
+DIAMECRON
+METMORFINA
+HIDROCLORO
+LOSARTANA
+LEVOIDE
+PROFIMAX
+VITAIM
+RIVOTRL
+
+
+</div>
+</div>
+</div>
+</div>
+<script
+  type="text/javascript"
+  src="js/codigo.js">
+</script>
+</body>
+</html>

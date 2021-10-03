@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <link rel="stylesheet" type="text/css" href="js/new.css">
+  <script src="js/java.js"></script>
+<script type="text/javascript">
+   function imc()
+      {
+         var altura = document.getElementById("alt2").value;
+         var peso = document.getElementById("pe2").value;
+         var controle = peso/altura;
+
+              document.getElementById('resullt').innerHTML = " IMC Resultado = "+parseFloat((controle).toFixed(2));
+
+      }
+      function enviar(){
+        var valor = document.getElementById("caixac").value;
+        var valor2= document.getElementById("caixab").value;
+            valor=valor/3.14;
+            valor2=valor2/3.14;
+
+            if ((valor<=55) && (valor2<=55)) 
+            {
+            	
+           document.getElementById('caixars').innerHTML = "Pode realizar <br> caixa toracica = " + parseFloat(valor.toFixed(2)) + "\n<br>Caixa abdomen = " + parseFloat(valor2.toFixed(2));
+
+            }
+            else{
+              document.getElementById('caixab').innerHTML = "Não pode realizar\n <br>caixa toracica = " + parseFloat(valor.toFixed(2))  + "\n<br>Caixa abdomen = " + parseFloat(valor2.toFixed(2));
+            }
+            return 0;
+
+    }
+
+    function checarcr()
+{
+ var botoes = document.getElementsByName("Sexo");
+ var peso = document.getElementById("pesokg").value;
+ var idade = document.getElementById("idadeano").value;
+ var creat = document.getElementById("creatn").value;
+ var controle=0.5;
+
+
+
+ 
+ 		if (botoes[0].checked)
+ 		 {
+ 		 	controle=140-idade;
+ 		 	controle=controle*peso;
+ 		 	creat=creat*72;
+ 		 	controle=controle/creat;
+
+           
+            if (controle<60)
+            {
+
+                document.getElementById('creatin').innerHTML ="Confirmar com DR.Moscateli<br>Clearense de Creatina= " + parseFloat(controle.toFixed(2))+" ML/Min";
+            }
+            if (controle>60)
+            {
+               document.getElementById('creatin').innerHTML ="<br>  Agendar normalmente<br>Clearense de Creatina = "+parseFloat(controle.toFixed(2))+" ML/Min"; 
+            }
+
+
+
+ 		}
+ 		else 
+ 			if (botoes[1].checked)
+ 		 {
+ 			 controle=140-idade;
+ 		 	controle=controle*peso;
+ 		 	creat=creat*72;
+ 		 	controle=controle/creat;
+ 		 	controle=controle*0.85;
+             if (controle<60)
+            {
+               document.getElementById('creatin').innerHTML ="*Cratinina muito baixa* <br>Confirmar com DR.Moscateli<br>Clearense de Creatina= " + parseFloat(controle.toFixed(2))+" ML/Min";
+            }
+            if (controle>60)
+            {
+               document.getElementById('creatin').innerHTML ="<br>  Agendar normalmente<br>Clearense de Creatina = "+parseFloat(controle.toFixed(2))+" ML/Min"; 
+            }
+ 		}
+ 		else {
+ 			alert("Sexo não preenchido");
+
+ 		}
+}
+jQuery(document).ready(function(){
+
+jQuery("#subirTopo").hide();
+
+jQuery('a#subirTopo').click(function () {
+         jQuery('body,html').animate({
+           scrollTop: 0
+         }, 800);
+        return false;
+   });
+
+jQuery(window).scroll(function () {
+         if (jQuery(this).scrollTop() > 1000) {
+            jQuery('#subirTopo').fadeIn();
+         } else {
+            jQuery('#subirTopo').fadeOut();
+         }
+     });
+});
+</script>
+  <link rel="sortcut icon" href="img/favicon.ico" type="image/x-icon" />;
+<title>Biolabor - RM/TC</title>
+<style>
+	#grad1 {
+  height: 200px;
+  background-image: linear-gradient(lightblue, white, lightblue);
+}
+body {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body leftmargin="80">>
+  <a id="subirTopo">
+  ^ <br> subir
+</a>
+	<div id="grad1">
+<center>
+<table>
+<tr>
+<br><a href="../index.html"> <img src="img/logo.png"></a>
+<br><br><br>
+<form method="get" action="medicos.html">
+    <button type="submit"><font size="6">Medicos</font></button>
+</form>
+
+<form method="get" action="convenios.html">
+    <button type="submit"><font size="6">Convenios</font></button>
+</form>
+
+<form method="get" action="exames.html">
+    <button type="submit"><font size="6">Exames</font></button>
+</form>
+
+<form method="get" action="ramais.html">
+    <button type="submit"><font size="6">Ramais</font></button>
+</form>
+
+<form method="get" action="resso.html">
+    <button type="submit"><font size="6">Ressonancia</font></button>
+</form>
+
+</tr>
+</table>
+</center>
+<center><form method="get" action="link.html">
+    <button type="submit"><font size="6">Links nescessarios</font></button></center></form>
+		</div>
+    <br><br>
+<center> <p><font size="5"><font color="red" size="6">CTRL+F Para pesquisa</font></font></p> </center>
+<!daqui para cima não mecher no diretorios>
+<h1><a href="#ct">Tomografia - Clique</a></h1>
+<h1><a href="#Clearense">Clearense Creatinina</a></h1>
+<h1><a href="#obeso">Paciente obeso</a></h1>
+<h1><a href="#imcr">Calculo IMC</a></h1>
+<center><h1> <p><font size="5"><font color="blue" size="6">RESSONANCIA</font></font></h1></p> </center>
+<br>__________________________________________________________________<br>
+<center><h2><font size="6" color="blue"><a href="arq/orienrm.pdf">Orientações gerais de Ressonancia. (PDF)</a></font></h2>  </center>
+<center>   <font color="red" size="4"> AGENDA EXCLUSIVA PARA EXAMES COM CONTRASTE</font></center>
+<br>__________________________________________________________________<br>
+<center><font color="red">HORÁRIOS :<br></font></center>
+
+<br>- <font color="red">EXAMES CONTRASTADOS:</font>
+
+<br>• SEGUNDA -06:30 ÁS 18:30  - (PARA QUE ACABE ÁS 19:00) - SE ATENTAR COM HORÁRIOS DESTINADOS A ANESTESIA,SENDO DAS 07:00 ÁS 12:00 PARA QUE ACABE AS 12:30 )!* 
+
+<br>•  TERÇA - 06:30 ÁS 18:30  - (PARA QUE ACABE ÁS 19:00)
+<br>• QUARTA -06:30 ÁS 20:30  - (PARA QUE ACABE ÁS 21:00)
+<br>HORÁRIO DE JANTA ÁS 18:30 E 19:00 - AGENDAR SOMENTE RM DE JOELHOS E COLUNA LOMBAR 
+
+<br>• QUINTA - 06H30 ÁS 18:30 - ( PARA QUE ACABE ÁS 19:00)
+<br>• SEXTA - 06H30 ÁS 18:30 - ( PARA QUE ACABE ÁS 19:00)
+<br>• SÁBADO - 06H30 ÁS 10:30 - (PARA QUE ACABE ÁS 11:00) - 14:00 ÁS 17:00 (PARA QUE ACABE ÁS 17:30)
+
+<br>• DOMINGO - 08:00 ás 11:30 ( PARA QUE ACABE ÁS 12:00)
+
+<br>_________________________________________________________________
+<center><font color="red">  ATENÇÃO: </font> </center> 
+
+<br>• AGENDAR TODOS OS EXAMES EM SEQUENCIA, NÃO DEIXANDO BURACOS NA AGENDA.
+
+<br>• AGENDAMENTOS PARA O MESMO DIA, AVISAR GERENTE, PARA QUE A MESMA AVISE A SALA;
+
+<br>•  PACIENTES ACIMA DE 65 ANOS PARA EXAMES CONTRASTADOS,NECESSÁRIO EXAME DE CREATININA COLETADO DENTRO DE ATÉ 90 DIAS, APÓS RESULTADO DE CREATININA, FAZER O CALCULO DO CLEARANCE E ANOTAR AMBOS RESULTADOS NA AGENDA;
+
+<br>• RESULTADOS MENOR QUE 60 - DR. MOSCATELLI PRECISA AUTORIZAR A REALIZAÇÃO;
+
+<br>• RESULTADO MAIOR QUE 60 - AGENDAR NORMALMENTE;
+<br><center><font color="red" size="4">  EXAMES QUE POR PROTOCOLO SÃO CONTRASTADOS:</font></center>
+
+<br>• RM DE CRANIO • SELA TURCICA• ANGIO RM• HIPOFISE• ORBISTAS• OUVIDOS 
+
+<br>• SEIOS DA FACE• PESCOÇO•TORAX• MAMAS•CORAÇÃO•ABDOMEN•COLANGIO
+
+<br>•  PELVE• ENTERORM• MAOS• DEDOS• PUNHOS• BRAÇO • ANTEBRAÇO 
+<br>•COTOVELO•PROSTATA•APARELHO URINARIO•OSSOS TEMPORAIS• GLUTEOS 
+
+<br>•TORNOZELO•PERNA•COXA•PÉ•SACRO ILIACAS•ESCAPULA•PLEXO BRAQUIAL;
+<br><center><font color="red">INFORMAÇÕES GERAIS:  </font></center>
+
+<br>- TODOS OS AGENDAMENTOS DE RM DEVE CONTER O PESO E ALTURA DO PACIENTE;
+
+<br>- CASO CONVENIO: CAMPO 5 - 6 E 30 DA GUIA LIBERADA, CARTEIRINHA E AS PERGUNTAS OBRIGATÓRIAS DE RM;
+
+<br>- QUALQUER REGIÃO QUE FOR SUSPEITA DE TUMOR É NECESSÁRIO CONTRASTE;
+<br>
+<br>- PACIENTES COM EXAME CONTRASTADO NECESSÁRIO UMA SEMANA DE INTERVALO DE UM EXAME CONTRASTADO PARA OUTRO ;
+
+<br>- RM DE COLUNA LOMBAR-LOMBOSACRA-DORSAL NO QUAL O PACIENTE JA OPEROU A REGIÃO É NECESSÁRIO AGENDAR EM HORARIO CONTRASTADO;
+
+<br>-ANGIO RM DE PESCOÇO E ANGIO DE CRANIO NÃO PODEM SER REALIZADOS NA MESMA DATA, AGENDAR COM 1 SEMANA DE INTERVALO ENTRE UM EXAME E OUTRO !!
+<br>
+<br>-  RM DE ATM AGENDAR EM HORARIO CONTRASTADO DE SEG A SEXTA DAS 07H AS 15H;
+
+<br>-ARTRO RM PRECISA SER COMBINADO O DIA E HORÁRIO COM O DR. MOSCATELLI ANTES DO AGENDAMENTO, O PACIENTE DEVE CHEGAR 1 HORA ANTES !!
+<br><br><br>__________________________________________________________________
+<center><font color="red">INFORMAÇÕES ADICIONAIS:</font></center>
+<br><br>
+<br>- RM CARDÍACA COM STRESS OU PARA PESQUISA DE ISQUEMIA : NECESSÁRIO AGENDAR SOMENTE DE SEGUNDA OU TERÇA POIS É NECESSÁRIO A PRESENÇA DO DR CLAUDIO NA RESSONÂNCIA;NECESSÁRIO COMBINAR COM ELE O DIA E AVISAR A JÉSSICA SAC VG E BLOQUEAR O HORARIO DE ERGOMÉTRICO;
+ ( SOMENTE UMA POR SEMANA ! ;
+<br>- RM CARDÍACA SEM STRESS - AGENDAR EM QUALQUER DIA  EM HORARIOS CONTRASTADO;
+
+<br> -AGENDAMENTOS DE EXAMES COM E SEM CONTRASTE JUNTOS, SEMPRE REDOBRAR A ATENÇÃO REFERENTE AO HORARIO DUPLICADO, POIS VAI SER REALIZADO PRIMEIRO O EXAME SEM CONTRASTE,PARA DEPOIS O EXAME COM CONTRASTE;
+
+<br>- EXAMES COM ANESTESIA : PACIENTE DEVE TER AVALIAÇÃO PRE ANESTESICA PARA REALIZAR O EXAME, NO CASO DE NÃO POSSUIR ESSA AVALIAÇÃO, AGENDAR AVALIAÇÃO ANESTESICA COM A DR ENZO ANTES DE REALIZAR O AGENDAMENTO DO EXAME,NECESSÁRIO INCLUIR 1 HORÁRIO Á MAIS ;
+
+<br>- RM DAS MAMAS AGENDAR EM HORÁRIO CONTRASTADO, SE A PACIENTE MENSTRUAR AGENDAR DO 5 ° AO 15° DIA DO CICLO MENSTRUAL, NO CASO DE NÃO MENSTRUAR EM QUALQUER DATA  NECESSÁRIO 1 HORÁRIO;
+__________________________________________________________________
+<br><br><u><font color="red" size="4">   EXAMES QUE NÃO REALIZAMOS COM ANESTESIA:</font>.</u>
+
+<br><br>RM DE MAMAS - MÃOS - PUNHOS - COTOVELOS - DEDOS - ANTEBRAÇO - ENTERORESSONÂNCIA E CORAÇÃO;
+<br><br>__________________________________________________________________
+<center><font color="red">NO ATO DO AGENDAMENTO PERGUNTAR SE O PACIENTE FAZ USO DE:</font></center>
+
+<br>-MARCAPASSO NO CORAÇÃO
+<br>-STENT NO CORAÇÃO
+<br>-CLIP NEUROLÓGICO PARA ANEURISMA
+<br>-PROJÉTIL DE BALA ALOJADA NO CORPO
+<br>-IMPLANTE COCLEAR
+<br>-PROTESE, PLACA,PARAFUSO, PINO 
+<br>- SUSPEITA DE TUMOR
+<br>- APARELHO ODONTOLÓGICO FIXO 
+<br>- SE POSSUI CLAUSTROFOBIA 
+
+<br>- Se possuir MARCAPASSO NO CORAÇÃO E CLIP NEUROLÓGICO PARA ANEURISMA - O paciente deve ter uma carteirinha aonde descreve que o marcapasso ou o clip é apto e compatível com o aparelho de Ressonância Magnética, sendo assim também é necessário a presença do  técnico do marcapasso ou clip neurológico.
+
+<br>-STENTE NO CORAÇÃO - Pode realizar acima de 3 meses de uso. (Caso implatado recentemente,necessário confirmar com o Dr.Moscatelli)
+
+<br>- PROJÉTIL DE BALA ALOJADA NO CORPO - Se a bala estiver alojada próximo de orgãos vitais deve ser realizado um RX para verificar com a Biomédica se será possível realizar o exame de Ressonância.
+
+<br>- IMPLANTE COCLEAR: Se a resposta for , SIM: Deverá ter uma carta de seu médico liberando a realização do exame, e ainda, se o implante é compatível com o aparelho de Ressonância Magnética.
+
+<br>- PROTESE, PINO, PLACA, PARAFUSO - Pode realizar acima de 3 meses de uso. Caso seja Titanuo o material utilizado e a cirugia seja recente confirmar na ressonância se pode realizar com menos de 45 dias.
+
+<br>- APARELHO ODONTOLÓGICO FIXO - Perguntar se possui apenas para realização dos exames de  CRANIO, SEIOS DA FACE, HIPOFISE,CERVICAL, OUVIDO, ( TODAS AS AREAS RELACIONADA A REGIÃO DA FACE E CERVICAL) pois o aparelho pode dar interferência na imagem, então o paciente deve vir fazer um teste no aparelho antes do agendamento para ser verificado se vai ser possível realizar o exame ou se será informado que deverá tirar o aparelho no dentista e retornar para o agendamento e realização.
+<br>
+ <br><center><font color="red">QUANTIDADE DE HORÁRIOS PARA AGENDAMENTO DOS EXAMES: </font></center>
+
+<br>- RM MÃO -  1 HORÁRIO CADA LADO
+<br>- RM PUNHO -  1  HORÁRIO CADA LADO 
+
+<br>!! LEMBRANDO QUE QUANDO FOR SOLICITADO MÃOS E PUNHOS (4 EXAMES), É NECESSÁRIO DIVIDIR O EXAME EM 2 DIAS, DANDO O INTERVALO DE 7 DIAS ENTRE UM EXAME E OUTRO !!
+
+<br>- RM PLEXO BRAQUIAL -  2 HORÁRIOS 
+<br>- RM COLANGIO - 2 HORÁRIOS
+<br> RM PESCOÇO - 2 HORÁRIOS
+<br>- RM SEIO DA FACE - 2 HORÁRIOS
+<br>-RM COLUNA TORACOLOMBAR - 2 HORÁRIO
+<br>-RM PELVE -  2 HORÁRIOS (PASSAR PREPARO DO MINILAX)
+<br>-RM ABDOMEM TOTAL -  3 HORÁRIOS ( PASSAR PREPARO MINILAX )    
+<br>-RM PROSTATA MULTIPARAMETRICA - 2  HORÁRIOS ( PASSAR MINILAX ) 
+<br>-RM PROSTATA - 2 HORÁRIOS<br>
+<br>-RM PAREDE ABDOMINAL - 2 HORÁRIOS
+<br>-RM CARDIACA - 2 HORÁRIOS
+<br>-URO RM (Ap.urinário) - 3 HORÁRIOS
+<br>-ENTERO-RM - 3 HORÁRIOS ( AVISAR SALA DE RESSO DEVIDO COMPRA DO MANITOL)
+<br>-RM PLEXO BRAQUIAL - 2 HORÁRIOS
+<br>-RM FETAL - 2 HORÁRIOS
+
+<center><h1 id="obeso">Ressonancia Magnética para pacientes com 100 kg ou mais</h1></center>
+<p>Anotar o peso e a altura do paciente;</p>
+<p>Acessar o site: <a href="https://www.programasaudefacil.com.br/calculadora-de-imc">CALCULO IMC</a>
+  <br> Ou utilizar metodo abaixo.<br>
+  <h2 id="imcr">IMC</h2>
+
+     Altura Não usar virgula "," - Utilizar apenas Ponto"."<br>
+     <input id="alt2" name="alt2" value="" type="int"><br>
+      Peso<br>
+     <input id="pe2" name="pe2" value="" type="int"><br>
+  <button onclick="imc()">Calcular</button><br>
+  <span id="resullt"></span>
+<br>
+<br>
+
+Inserir o peso e a altura do paciente e clicar em
+“calcular”.</p>
+<p>Anotar o IMC (Índice de massa corpórea) e seguir a
+orientação abaixo:</p><br>
+ <p>Até 29 = agendar normalmente.</p><br>
+ <p>Acima de 29 = O paciente deve medir em casa, com
+fita métrica, a circunferência do abdômen e do
+tórax incluindo os braços. </p>
+<img height="200px" src="img/pacobs.png">
+<br>
+  <font size="5">Valor da circuferencia do abdomen //Sem ponto "."</font><br>
+   <input id="caixab" name="caixab" value="" type="int"><br>
+   <font size="5">Valor circuferencia do Torax //Sem ponto "."</font><br>
+   <input id="caixac" name="caixac" value="" type="int"><br>
+   <button onclick="enviar()"><font size="5">Calcular</font></button> <br><br>
+   <font size="5"><span id="caixars"></span></font>
+
+
+<h1 id="Clearense"><center>Clearense de Creatina</center></h1>
+ 
+ <form><font size="5">Sexo:</font> 
+   <br> 
+
+   <input type="radio" name="Sexo" value="1"> <font size="5">Masculino</font><br>
+      <input type="radio" name="Sexo" value="2"><font size="5"> Feminino</font></form>
+<br>
+   <font size="5">Peso do paciente</font><br>
+   <input id="pesokg" name="pesokg" value="" type="int"><br>
+      <font size="5">Idade do paciente<font><br>
+   <input id="idadeano" name="idadeano" value="" type="int"><br>
+      <font size="5">creatina, não usar virgula(,) apenas ponto (.)</font><br>
+   <input id="creatn" name="creatn" value="" type="int"><br>
+   <button onclick="checarcr()"><font size="5">Calcular</font></button>
+   <p><span id="creatin"></span></p>
+
+
+
+<center> <h1 id="ct"><font size="5"><font color="blue" size="6">TOMOGRAFIA</font></font></h1> </center>
+
+<center><font color="red">APARELHO MULTISLICE - RECONSTRUÇÃO EM 3D</font></center>
+
+<br>- <b>AGENDAR EXAMES EM SEQUENCIA (PROCURAR NÃO DEIXAR BURACOS NA AGENDA)</b>
+<br>
+<br>- CT CORONÁRIAS NÃO REALIZADA NO BIOLABOR. 
+<br>DEMAIS TOMOGRAFIAS COMUNS E ROTINEIRAS, RELIZADAS NESTA AGENDA (PENHA). 
+<br>
+<br>- CT ABDOMEN TOTAL, CT ABDOMEN SUPERIOR, CT PELVE COM E SEM CONTRASTE - DEVE SER AGENDADO A PARTIR DAS 9H30 E SOLICITAR ANTECEDENCIA DE 2 HORAS PARA O PACIENTE. 
+<br>
+<br>- CT SEIOS DA FACE, CT MASTÓIDE, CT CRANIO, CT HIPÓFESE - SOLICITAR QUE RETIRE O PIRCING E BRINCOS (NA REGIÃO ESTUDADA, ACIMA CITADAS) ANTES DE SE DIRIGIR A REALIZAÇÃO DO EXAME. 
+<br>
+<br>- ANGIO TOMOGRAFIAS AGENDAR SOMENTE DUAS POR AGENDA, NOS ÚLTIMOS 4  HORÁRIOS (CADA ANGIO CT = 2 HORÁRIOS). 
+<br>
+<br>- CT ABDOMEN - AGENDAR SOMENTE *4* POR AGENDA, EM *2* HORÁRIOS CADA - NÃO SE ESQUECER DA ANTECEDENCIA DE 2 HORAS. 
+<br>
+<br>- CT CONTRASTADA NÃO É REALIZADA AOS SÁBADOS. __________________________________________________________________
+<br><center><font color="red">PERGUNTAS PARA EXAME CONTRASTADO: </font></center>
+<br>
+<br>   PARA QUALQUER TOMOGRAFIA CONTRASTADA, DEVERÁ SER FEITO AS SEGUINTES PERGUNTAS PARA O PACIENTE:
+<br>
+<br>1. Já teve edema de glote (garganta fechada por alergia)? Se sim, infelizmente o exame não poderá ser realizado no Biolabor, somente em ambiente hospitalar, desde que o exame só possa ser realizado COM CONTRASTE.
+<br>
+<br>2. Paciente diabético: Faz uso de: metformina, Glifage, Dimefor, Glucoformin, Glucophage etc? Se sim, deverá suspender 48 horas antes do exame.
+<br>__________________________________________________________________
+<br><center><font color="red">CONTRASTADOS AS TERÇAS-FEIRAS: </font></center>
+
+<br>SOMENTE AS TERÇAS-FEIRAS, OS EXAMES CONTRASTADOS DEVERÃO SER AGENDADOS À PARTIR DAS 9H - POIS É NECESSÁRIO A PRESENÇA DE UM MÉDICO NA UNIDADE. 
+<br>__________________________________________________________________
+ <br>       Identificação de contraste para: SELA TÚRCICA, HIPÓFESE, PESCOÇO,                  TÓRAX, ÓRBITAS, ABD. SUPERIOR, ABD. TOTAL E PELVE:
+<br>
+<br>-     Pedidos médicos que solicitam Tomografias de: Sela Túrcica, Hipófese, Pescoço, Tórax, Órbitas, Abdomen Superior, Abdomen Total ou Pelve sem especificação de contraste,  o(a) paciente deverá ser informado que neste caso, a decisão será de nosso médico radiologista no dia do seu exame. 
+<br>-     O paciente deverá então, ser informado sobre as duas possibilidades de valores: VALOR COM E SEM CONTRASTE!
+<br>-      E ainda, ser agendado em horário exclusivo para Tomografias contrastadas, seguindo as restrições e preparos do exame com contraste (ANTECEDENCIA, <br>CREATININA, JEJUM E PERGUNTAR SOBRE EDEMA DE GLOTE E MEDICAMENTOS PARA DIABETES), para que, caso seja necessário, o paciente esteja preparado para receber o contraste. 
+<br>__________________________________________________________________
+<br><center><font color="red">CREATININA PARA PACIENTES COM 65 ANOS OU MAIS:</font></center> 
+<br>
+<br>PACIENTE COM 65 ANOS OU MAIS PARA REALIZAÇÃO DE TOMO COM CONTRASTE - É NECESSÁRIO CREATININA COM VALIDADE DE 3 MESES, E, CASO NÃO TENHA, DEVERÁ REALIZAR <br>ATÉ 2 DIAS ANTES DO EXAME (SEM ONUS). CASO TENHA, DEVERÁ APRESENTAR NO AGENDAMENTO E NO DIA DA REALIZAÇÃO.
+<br>__________________________________________________________________
+<br><center><font color="red"> COM ANESTESIA:</font></center>
+<br>
+<br>1º PASSO: PRÉ CONSULTA COM A DRA THAIS (AGENDADA NA PENHA AS SEGUNDAS-FEIRAS) - VALOR DE R$100,00 EM DINHEIRO PARA PACIENTES NO PARTICULAR/CONVÊNIOS, DESDE QUE TENHA COBERTURA PARA A ANESTESIA, COBRE A PRÉ CONSULTA. 
+<br>2º PASSO: SERÁ AGENDADO NA RECEPÇÃO DA PENHA A DATA DO EXAME COM ANESTESIA - DATA DEFINIDA PELA DRA THAÍS, EXCETO AOS SÁBADOS!
+<br>************ NÃO AGENDAR ANESTESIA NO SÁBADO***************
+<br>__________________________________________________________________
+<br><center><font color="red">MÉDICOS RADIOLOGISTAS E DIAS QUE ATENDEM NA PENHA:</font></center>
+<br>Dr Moscatelli - Seg - Quarta- Quinta  / Dra. Sonia - terca - / Dr. Mauro Sexta
+<br>__________________________________________________________________
+<br> <center><font color="red">CONFIRMAÇÕES DE PEDIDOS MÉDICOS:</font></center>
+<br>PEDIDOS MÉDICOS CONFIRMADOS COM DR MOSCATELLI AGENDAR NO DIA EM QUE DR MOSCATELLI ESTÁ NA UNIDADE (SEGUNDA, QUARTA E QUINTA). 
+<br>__________________________________________________________________
+<br>PEDIDOS MÉDICOS CONFIRMADOS COM DRA SONIA AGENDAR NO DIA EM QUE DRA SONIA ESTÁ NA UNIDADE (TERÇA-FEIRA). _<br>_________________________________________________________________
+
+
+
+</body>
+</html>
