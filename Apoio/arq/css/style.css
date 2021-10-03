@@ -1,0 +1,168 @@
+*{box-sizing: border-box}
+
+
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+body 
+
+{
+  background-image: url("../img/logo.jpg");
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+   background-color: lightblue;
+ margin: 0; padding: 0;background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+.btnblue {
+border:1px solid #25692A;
+border-radius:4px;
+display:inline-block;
+cursor:pointer;
+font-family:Verdana;
+font-weight:bold;
+font-size:13px;
+padding:6px 10px;
+text-decoration:none;
+}
+
+.btnblue {
+border-color:#46a7f5;
+background:linear-gradient(to bottom, #86c6f8 5%, #46a7f5 100%);
+box-shadow:inset 0px 1px 0px 0px #d7ecfd;
+color:white;
+text-shadow:0px 1px 0px #528009;  
+
+}
+.btnblue:hover {
+background:linear-gradient(to bottom, #46a7f5 5%, #86c6f8 100%);
+}
+
+.btnblue:active {
+position:relative;
+top:2px;}
+
+
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+    position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 10%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: #2196F3;
+}
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+.logob
+{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.main {
+  max-width: 80%;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid;
+  border-top: none;
+}
+.header {
+background-image: url(../img/logo.png);
+background-repeat: no-repeat;
+background-position: center;
+  background-color:rgba(255, 255, 255,0.5);
+  padding: 70px;
+  text-align: center;
+}

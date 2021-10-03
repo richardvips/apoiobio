@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/medico.css">
+  <link rel="sortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="js/pontj.js"></script>
+    <script type="text/javascript" src="js/pontj2.js"></script>
+
+	<title>EXAMES</title>
+
+<script type="text/javascript">
+    $(function() {
+  $('#alt2').maskMoney({ decimal: '.', thousands: '', precision: 2 });
+})
+
+  function imcendos()
+      {
+         var altura = document.getElementById("alt2").value;
+         var peso = document.getElementById("pe2").value;
+         var controle = peso/(altura*altura);
+         if (controle > 40)
+         {
+          document.getElementById('resullt').innerHTML ="*IMC ALTO Somente com anestesia*<br> Resultado IMC " + parseFloat(controle.toFixed(2));
+         }
+             else
+               if (controle < 20)
+         {
+          document.getElementById('resullt').innerHTML ="*IMC BAIXO Somente com anestesia*<br> Resultado IMC " + parseFloat(controle.toFixed(2));
+         }
+         else
+         {
+
+          document.getElementById('resullt').innerHTML ="*IMC NORMAL Agendar normalmente*<br> Resultado IMC " + parseFloat(controle.toFixed(2));
+         }
+
+      }
+
+</script>
+
+<style type="text/css">
+    tr{
+
+    text-align: center; 
+    vertical-align: middle;
+    background-color: #D8D8D8;
+  }
+  th
+  {
+    background-color: #5858FA;
+  }
+  #grad1 {
+  height: 200px;
+  background-image: linear-gradient(lightblue, white, lightblue);
+}
+
+</style>
+</head>
+<body>
+    <div class="header">
+    </div>
+<div class="navbar">
+  <a href="../index.html">Incio</a>
+  <a href="medicos.html">Medicos</a>
+  <a href= "convenios.html">Convenios</a> 
+  <a  class= "active"  href="exames.html">Exames</a> 
+  <a href="ramais.html">Ramais</a>
+  <a href="resso.html">RM -  TC</a>
+  <a href="link.html">LINKS</a>
+  <a href="calculo.html">Calculos</a>
+  <a href="">Treinamento</a>
+</div>
+<div class="main">
+<font size="4"><b>Se atentar no codigo TUSS dos prociedmentos, devem estar conforme a guia do convenio.</b> </font>
+ <br><img src="img/cdts.png">
+<br><br><br>Quando solicitar <font color="green">PERFIL LIPIDICO</font> Lançar <font color="green"><u>eleli - lipi - lipic</u></font>
+
+<p>Punção aspirativa por agulha fina= <font color="green">PAAF</font></p>
+<p>Punção aspirativa por agulha grossa=<font color="green"> Corebyopsia</font></p>
+<p>Contraste Hepato especifico RM= <font color="green"> RM COMO CONTRASTE PRIMOVIST</font></p>
+<p>EDA  ou esofagogastroduoendonoscopia= <font color="green">ENDOSCOPIA</font></p>
+<p>Quando solicitar Audiometria tonal vocal lançar=<font color="green"><u>aud1,aud3,aud4-Se infantil aud2,aud3,aud4</u></font></p>
+<p>Quando solicatado Ultrassom doppler membros inferiores/superiores, Sem especificar lançar = <font color="green">Arterial e Venoso</font></p>
+<p>Cintilografia Ossea = <font color="green">Agenda de medicina nuclear</font></p>
+<p>Cintilografia Ossea = <font color="green">Agenda de medicina nuclear</font></p>
+<p>Se solicitar somente rm do sistema nervoso central = <font color="green"> rm cranio-coluna cervical-coluna toracica-coluna lombar </font></p>
+<p>Quando solicitado MIBI = <font color="green"> MNPRE</font></p>
+<p>Urina 1 com teste de nitrito=<font color="green">Urina 1 já inclui o teste de nitrito</font></p>
+<p>Quando solcitar somente Hepatite B lançar=<font color="green">HBE - HBEAG - HBS - HBSAG - HBCG - HBCM</font></p>
+<p>Eletroencefalo com mapeamento cerebral, lançar somente=<font color="green">MAPEA</font></p>
+<p>CT de quadril=<font color="green">CT coxo femoral</font></p>
+<p>Rx coluna toracica, lançar como=<font color="green">Rx coluna dorsal</font></p>
+
+
+<center><h1>Exames que são realizados sem pedido medico</h1></center>
+<center><table border="1" style="width: 40%">
+  <center>
+    <tr><th>Exames</th><th>Feitos sem pedido no particular</th></tr>
+    <tr><td>Ultrassonografia em geral(dentre os exames realizados)</td><td bgcolor="white">Somente Dra. Maria hercidia, Dra. Daiana Dr. Roberto Puty realizam todos.<br>(Consultar livro para os demais medicos.)</td></tr>
+    <tr><td>Ultrassom obstetrico </td><td bgcolor="white">Consultar livro do medico</td></tr>
+    <tr><td>Mamografia</td><td bgcolor="white">Somente em ITU</td></tr>
+    <tr><td>Densitometria Óssea</td><td bgcolor="white">Somente em Itu</td></tr>
+    <tr><td>Ecocardiograma</td><td bgcolor="white">Sim</td></tr>
+    <tr><td>Eletrocardiograma</td><td bgcolor="white">Sim</td></tr> 
+    <tr><td>Mapa</td><td bgcolor="white">Sim</td ></tr>
+    <tr><td>Holter</td><td bgcolor="white">Sim</td></tr>
+    <tr><td>Eletroencefalograma</td><td bgcolor="white">Sim</td></tr>
+    <tr><td>Estudo Urodinamico</td><td bgcolor="white">Sim</td></tr>
+    <tr><td>Urofluxometria</td><td bgcolor="white">Sim</td></tr>
+    <tr><td>Audiometria</td><td bgcolor="white">Sim</td></tr>
+    <tr><td>Eletroneuromiografia</td><td bgcolor="white">Sim</td></tr>
+
+
+  </center>
+</table>
+</center>
+    <center><h1>RESULTADOS </h1></center>
+    <font size="5" color="red"><p>Como fazer protocolo e senha para acesso de resultados <b>Manualmente </b>.</p></font>
+    <table>
+    <tr>
+      <td  bgcolor="white">
+        <table border="1">
+          <tr>
+          <th>Procoolo</th>
+          </tr>
+          <tr><td><center>Protocolo <b>1099</b>+<b> Requisição</b></center></td></tr> 
+        
+          <tr>
+          <th>Senha</th>
+            </tr>
+          <tr><td><center>Numero da unidade <b>+</b> Codigo do paciente</b></center></td></tr>  
+
+        </table>
+
+      </td>
+      <td bgcolor="white">
+        <table border="1">
+          <tr><th>Unidaddes</th><th bgcolor="white">N° da unidade</th></tr>
+          <tr><td>Vergueiro</td><td bgcolor="white">8</td></tr>
+          <tr><td>Campolim</td><td bgcolor="white">9</td></tr>
+          <tr><td>Penha</td><td bgcolor="white">7</td></tr>
+          <tr><td>Zona Norte</td><td bgcolor="white">10</td></tr>
+          <tr><td>Zona Oeste</td><td bgcolor="white">12</td></tr>
+          <tr><td>Eden</td><td bgcolor="white">11</td></tr>
+          <tr><td>Piedade</td><td bgcolor="white">14</td></tr>
+          <tr><td>Salto de Pirapora</td><td bgcolor="white">16</td></tr>
+          <tr><td>Itu</td><td bgcolor="white">15</td></tr>
+
+        </table>
+
+      </td>
+
+      <td  bgcolor="white">
+        <h2>Codigo do paciente:</h2>
+        <img height="200px" src="img/codpac.png">
+      </td>
+    </tr> 
+</table>
+<h3> Protocolo de resultados impresso.</h3>
+<p>Após encontrar o paciente e exame que deseja o protocolo e senha, na parte inferior da tela você encontrara o botão "ficha" como explicado na foto a baixo. </p>
+<img style="width: 40%;" src="img/protocolo_manual/1.png">
+<img style="width: 40%;" src="img/protocolo_manual/2.png">
+<br>
+<br>
+<p>Em seguida clique em sim na caixa de texto que ira aparecer.</p>
+<img style="width: 40%;" src="img/protocolo_manual/3.png">
+<br>
+<p>Marque apenas a caixa que contem o item protocolo, e altere a quantidade de copias para 1, o restante não precisa deixar marcado.</p>
+
+<img style="width: 20%;" src="img/protocolo_manual/4.png"><img style="width: 20%;" src="img/protocolo_manual/5.png">
+<p>Para finalizar clique no icone da impressora. Consulte a impressora do setor e confira se foi impresso corretamente.</p>
+<br><br><br><br><br><br><br><br>
+<h2 style="text-align: center;">Endoscopia/Colonosocpia</h2>
+
+  <h2 id="imcr" style="color: darkred;">IMC</h2>
+
+      <font size="5"> Altura <br></font>
+     <input  size="3" id="alt2" name="alt2" value="" type="int" onchange="this.value = this.value.replace(/,/g, '.')"><br>
+       <font size="5"> Peso<br></font>
+     <input size="3" id="pe2" name="pe2" value="" type="int"><br><br>
+    <button class="btnblue" onclick="imc()">Calcular</button><br><br>
+    <font size="5"><span id="resullt"></span></font>
+<br><br>
+
+<br>
+
+
+<br>IDADE MÍNIMA PARA ENDOSCOPIA: 12 ANOS
+<br>De 12 a 15 anos somente com anestesia.
+<br>
+<br>ENDOSCOPIA + COLONOSCOPIA: AGENDAR NOS 3 ÚLTIMOS HORÁRIOS, CASO ESTEJAM PREENCHIDOS, AGENDAR NOS 3 ANTI PENÚLTIMOS. NÃO AGENDAR EM QUALQUER HORÁRIO VAGO DA AGENDA!!! 
+<br>*****ENDOSCOPIA AGENDAR ANTES DOS EXAMES DE ENDOS + COLONO*******
+<br>
+<br>!! PACIENTE COM SUSPEITA DE CORONAVIRUS AGENDAR NO ULTIMO HORÁRIO DA AGENDA , A PEDIDO DO DR. BRAZ !!
+<br>
+<br>confirmar IDADE, PESO E ALTURA
+<br>Verifiquem o IMC do paciente e caso tenha menos de 40, pode agendar normal e acima de 40 ou inferior a 20  precisa ser com ANESTESIA ou em AMBIENTE HOSPITALAR.
+<br>
+<br>PERGUNTAS PARA ENDOSCOPIA:
+<br>POSSUI ALGUMA DOENÇA GRAVE?
+<br>(Se sim, consultar o Dr. Braz para verificar a necessidade de agendar a pré consulta)
+<br>
+<br><h3 style="color: darkred;">POSSUI PROBLEMAS CARDÍACOS?</h3>
+<br>(Se sim, apenas com carta feita pelo cardiologista responsável)
+<br>
+<br>FAZ USO DE MEDICAMENTOS PARA DORMIR? CALMANTES? ANTIDEPRESSIVOS?
+<br>(Se sim, informar ao paciente que os medicamentos em uso podem interferir no sedativo utilizado na endoscopia, o que pode causar incômodo e dor. DAR A OPÇÃO DE REALIZAR COM ANESTESIA, SE FOR ACEITO, AGENDAR A PRÉ CONSULTA COM ANESTESISTA)
+<br>*ANOTAR TODAS AS RESPOSTAS NAS OBSERVAÇÕES!!!
+<br>
+<br>*PACIENTE INTERNADO: SEMPRE VERIFICAR COM O DR. BRAZ OU VANESSA ENFERMEIRA ANTES DE FAZER O AGENDAMENTO!
+<br>
+<br>COLONOSCOPIA:
+<br>- PACIENTES COM 65 ANOS OU MAIS: NECESSÁRIO AGENDAR PRÉ CONSULTA COM A ENFERMEIRA VANESSA. (AGENDA DE PRÉ CONSULTA)
+<br>
+<br>ENDOSCOPIA + COLONOSCOPIA: AGENDAR NOS 3 ÚLTIMOS HORÁRIOS, CASO ESTEJAM PREENCHIDOS, AGENDAR NOS 3 ANTI PENÚLTIMOS. NÃO AGENDAR EM QUALQUER HORÁRIO VAGO DA AGENDA!!! 
+<br>
+<br>ATENÇÃO: MARCAR NUMERO DE CARTEIRINHA CASO SEJA CONVENIO, INFORMAÇÕES DA GUIA, E DATA DO PEDIDO MÉDICO. ANOTAR NAS OBSERVAÇÕES!
+
+
+<h3>Sem supervisão, confirmar pedido medico</h3>
+<p>Precisamos confirmar o pedido medico junto ao setor técnico, porem o mesmo não está operante no momento, o paciente poderia entrar em contato amanha no período da manha para darmos prosseguimento em sua solicitação?</p>
+
+
+<br>
+<br><br><h3>Orçamento Toxicologico Detran</h3>
+<br>*Orçamento:*
+<br>
+<br>° Particular: R$ 379,80
+<br>° Cartão Biolabor: R$189,90
+<br>
+<br>*Prazo de entrega:*7 dias úteis 
+<br>
+<br>(Valores válidos por 3 dias úteis, conforme PDF)
+
+</div>
+
+
+</body>
+</html>

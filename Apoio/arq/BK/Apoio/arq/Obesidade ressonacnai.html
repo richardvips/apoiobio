@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Curso JavaScript Progressivo</title>
+
+
+   <script type="text/javascript">
+function checarcr()
+{
+ var botoes = document.getElementsByName("Sexo");
+ var peso = document.getElementById("pesokg").value;
+ var idade = document.getElementById("idadeano").value;
+ var creat = document.getElementById("creatn").value;
+ var controle=0.5;
+
+
+
+ 
+ 		if (botoes[0].checked)
+ 		 {
+ 		 	controle=140-idade;
+ 		 	controle=controle*peso;
+ 		 	creat=creat*72;
+ 		 	controle=controle/creat;
+
+           
+            if (controle<60)
+            {
+            	 alert("Creatinina masculina = " + controle+"\n confirmar com DR.Moscateli");
+
+  document.getElementById('meuTextoVaiAqui').innerHTML = controle;
+            }
+            if (controle>60)
+            {
+            	 alert("Creatinina masculina = " + controle+"\n confirmar com DR.Moscateli");
+
+  document.getElementById('meuTextoVaiAqui').innerHTML = controle;
+            }
+
+
+
+
+ 		}
+ 		if (botoes[1].checked)
+ 		 {
+ 			 controle=140-idade;
+ 		 	controle=controle*peso;
+ 		 	creat=creat*72;
+ 		 	controle=controle/creat;
+ 		 	controle=controle*0.85;
+             if (controle<60)
+            {
+            	 alert("Creatinina fenmina = " + controle+"\n confirmar com DR.Moscateli");
+            }
+            if (controle>60)
+            {
+            	 alert("Creatinina fenmina = " + controle+"\n confirmar com DR.Moscateli");
+            }
+ 		}
+}
+
+   
+   </script>
+   
+ </head>
+ <body>
+ 	<form>
+   Sexo: 
+   <br> 
+
+   <input type="radio" name="Sexo" value="1"> "Masculino"<br>
+      <input type="radio" name="Sexo" value="2"> fenmino
+<br>
+   <p><font size="5">Peso do paciente</font></p>
+   <input id="pesokg" name="pesokg" value="" type="int">
+      <p><font size="5">Idade do paciente<font></p>
+   <input id="idadeano" name="idadeano" value="" type="int">
+      <p><font size="5">creatina</font></p>
+   <input id="creatn" name="creatn" value="" type="int"><br>
+   <button onclick="checarcr()">Calcular</button>
+<br/><span id="meuTextoVaiAqui"></span>
+
+ </body>
+</html>

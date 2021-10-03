@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <link rel="stylesheet" type="text/css" href="js/new.css">
+  <script src="js/java.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+
+jQuery("#subirTopo").hide();
+
+jQuery('a#subirTopo').click(function () {
+         jQuery('body,html').animate({
+           scrollTop: 0
+         }, 800);
+        return false;
+   });
+
+jQuery(window).scroll(function () {
+         if (jQuery(this).scrollTop() > 1000) {
+            jQuery('#subirTopo').fadeIn();
+         } else {
+            jQuery('#subirTopo').fadeOut();
+         }
+     });
+});
+</script>
+	  <link rel="sortcut icon" href="img/favicon.ico" type="image/x-icon" />;
+<title>Biolabor - Medicos</title>
+<style>
+	#grad1 {
+  height: 200px;
+  background-image: linear-gradient(lightblue, white, lightblue);
+}
+body {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body leftmargin="80">>
+  <a id="subirTopo">
+  ^ <br> subir
+</a>
+	<div id="grad1">
+<center>
+<table>
+<tr>
+<br><a href="../index.html"> <img src="img/logo.png"></a>
+<br><br><br>
+<form method="get" action="medicos.html">
+    <button type="submit"><font size="6">Medicos</font></button>
+</form>
+
+<form method="get" action="convenios.html">
+    <button type="submit"><font size="6">Convenios</font></button>
+</form>
+
+<form method="get" action="exames.html">
+    <button type="submit"><font size="6">Exames</font></button>
+</form>
+
+<form method="get" action="ramais.html">
+    <button type="submit"><font size="6">Ramais</font></button>
+</form>
+
+<form method="get" action="resso.html">
+    <button type="submit"><font size="6">Ressonancia</font></button>
+</form>
+
+</tr>
+</table>
+</center>
+<center><form method="get" action="link.html">
+    <button type="submit"><font size="6">Links nescessarios</font></button></center>
+		</div>
+    <br><br>
+<center> <p><font size="5"><font color="red" size="6">CTRL+F Para pesquisa</font></font></p> </center>
+<!daqui para cima não mecher no diretorios>
+
+<br><br><br>
+
+<CENTER><p><font color="red" size="5">MEDICOS QUE REALIZAM SEM PEDIDOS</font></p></CENTER>
+
+<br><font color="blue">Tiago Rodrigues</font>   SÓ REALIZA OBST SEM PEDIDO Á PARTIR DE 10 SEMANAS;<br>
+<br><font color="blue">Roberto Puty</font> - RELIZA TODOS OS EXAMES SEM PEDIDO MÉDICO, EXCETO US TRANSVAGINAL E US PRÓSTATA VIA TRANSRETAL.<br>
+<br><font color="blue">Daiana</font> REALIZA TODOS OS EXAMES SEM PEDIDO MEDICO , EXCETO EXAMES COM DOPPLER<br>
+<br><font color="blue">Camila Holtz</font> - TODOS OS EXAMES É NECESSÁRIO PEDIDO MÉDICO, INCLUSIVE OBST! -OBSTETRICO PODE SER PEDIDO DE ENFERMEIRA<br>
+<br><font color="blue">Julia</font> -OBST SEM PEDIDO A PARTIR DE 10 SEMANAS COM CARTEIRINHA DE PRÉ NATAL! <br>
+<br><font color="blue">Maria Hercidia</font>- FAZ TODOS OS EXAMES SEM PEDIDO MÉDICO-ABTOT somente no periodo da manha<br>
+<br><font color="blue">Gabriel Rodrigues </font>REALIZA EXAMES SEM PEDIDO MÉDICO INCLUSIVE PELVT<br>
+<br><font color="blue">Maicon Magalhaes </font> REALIZA TODOS OS EXAMES SEM PEDIDO MÉDICO;<br>
+<br><font color="blue">Angela </font>FAZ OBSTETRICO SEM PEDIDO <br>
+<br><font color="blue">Luciane </font>PARA FAZER OBSTETRICO ACEITA PEDIDO DE COREN, DESDE QUE SEJA MAIS DE 12 SEMANAS. <br>PARA FAZER TRANSVAGINAL/PELVICO GINECOLOGICO ACEITA PEDIDO SOMENTE DE CRM<br>
+<br><font color="blue">Laureen Chaves </font>Unica medica que realiza ecocardiograma simples sem pedido medico.<br>
+<br><font color="blue">Virna </font>Unica medica que realiza ecocardiogram fetal fetal ECOFE <br>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>IMC</title>
+   <script type="text/javascript">
+      function imc()
+      {
+         var altura = document.getElementById("alt2").value;
+         var peso = document.getElementById("pe2").value;
+         var controle = peso/altura;
+
+              document.getElementById('resullt').innerHTML = "IMC Resultado = "+parseFloat((controle).toFixed(2));
+
+
+      }
+      //teste de 
+
+   </script>
+
+</head>
+<body>
+     Altura Não usar virgula "," - Utilizar apenas Ponto"."<br>
+     <input id="alt2" name="alt2" value="" type="int"><br>
+      Peso<br>
+     <input id="pe2" name="pe2" value="" type="int"><br>
+  <button onclick="imc()">Calcular</button><br>
+  <span id="resullt"></span>
+
+
+  
+abaixo 29 resso ok
+colono acima de 40 não pode, inferior a 20 tbm
+</body>
+</html>
